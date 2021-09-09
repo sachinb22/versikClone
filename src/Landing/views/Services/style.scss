@@ -1,0 +1,28 @@
+@import "src/assets/css/vars";
+section {
+  &.services {
+    height: 100vh;
+    padding: 10vh 10vw;
+    .title {
+      font-size: 40px;
+    }
+    .card-div {
+      display: flex;
+      padding: 4vh 4vw;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        height: 200px;
+        width: 250px;
+        margin-top: 20px;
+        img {
+          padding: 10px 70px;
+        }
+        & > div {
+          text-align: center;
+          font-family: $title-font;
+        }
+      }
+    }
+  }
+}

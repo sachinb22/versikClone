@@ -1,0 +1,42 @@
+@import "src/assets/css/vars";
+section {
+  &.what-we-do {
+    padding: 10vh 10vw;
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      font-family: $paragraph-font;
+    }
+    .desc {
+      display: flex;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+      .history {
+        font-family: $title-font;
+        flex: 1;
+        font-size: 16px;
+        color: rgb(141, 133, 133);
+      }
+      .feature {
+        flex: 1;
+        box-sizing: border-box;
+        .feature-item {
+          margin: 10px 40px;
+          padding-bottom: 10px;
+          display: flex;
+          justify-content: flex-start;
+          color: rgb(141, 133, 133);
+          align-items: center;
+          border-bottom: 1px solid rgb(141, 133, 133);
+          span {
+            font-size: 14px;
+            margin-right: 10px;
+            color: rgb(141, 133, 133);
+          }
+        }
+      }
+    }
+  }
+}
